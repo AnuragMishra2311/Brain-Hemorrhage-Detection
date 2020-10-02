@@ -1,4 +1,4 @@
 # Brain-Hemorrhage-Detection
 
 ![](video.gif)
-![](ezgif.com-gif-maker)
+![](ezgif.com-gif-maker.gif)
