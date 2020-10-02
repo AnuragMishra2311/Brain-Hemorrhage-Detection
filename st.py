@@ -1,7 +1,7 @@
 import tensorflow as tf
 import streamlit as st
 import numpy as np
-import cv2
+#import cv2
 
 #st.set_option('deprecation.showfileUploaderEncoding', False)
 model=tf.keras.models.load_model('final.h5')
@@ -13,9 +13,9 @@ fil=st.file_uploader('',type=['jpg','png','jepg'])
 
 def func():
 
-    file_bytes = np.asarray(bytearray(fil.read()), dtype=np.uint8)
+    '''file_bytes = np.asarray(bytearray(fil.read()), dtype=np.uint8)
     opencv_image = cv2.imdecode(file_bytes, 1)
-    st.image(opencv_image, channels="RGB")
+    st.image(opencv_image, channels="RGB")'''
 
     image=tf.keras.preprocessing.image.load_img(fil,target_size=(130,130))
 
