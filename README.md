@@ -1,3 +1,3 @@
 # Brain-Hemorrhage-Detection
 
-![](video.gif)
+![](Visuals/video.gif)
