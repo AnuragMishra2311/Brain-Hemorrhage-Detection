@@ -1,6 +1,6 @@
 # Brain-Hemorrhage-Detection
 
-## Modle Architecture
+## Model Architecture
 ![](Visuals/download.png)
 
 ![](Visuals/video.gif)
