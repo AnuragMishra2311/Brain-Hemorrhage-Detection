@@ -10,6 +10,6 @@ To classify whether a person has brain hemorrhage or not using CT scan image of 
 Kaggle
 
 ## CNN Model Architecture 
-![](Visuals/download.png)
+![](Visuals/j.jpg)
 
 
