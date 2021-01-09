@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-model=tf.keras.models.load_model('final.h5')
+model=tf.keras.models.load_model('final.h5',compile=False)
 
 # title
 st.title('Brain Hemmorahage Detection')
@@ -13,10 +13,9 @@ fil=st.file_uploader('',type=['jpg','png','jepg'])
 
 
 def func():
-    #displaying image back on webapp
-    '''file_bytes = np.asarray(bytearray(fil.read()), dtype=np.uint8)
+    file_bytes = np.asarray(bytearray(fil.read()), dtype=np.uint8)
     opencv_image = cv2.imdecode(file_bytes, 1)
-    st.image(opencv_image, channels="RGB")'''
+    st.image(opencv_image, channels="RGB")
 
     # Making prediction
     image=tf.keras.preprocessing.image.load_img(fil,target_size=(130,130))
